@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍보사이트</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        section {
+            padding: 2em 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group button {
+            padding: 0.5em 1em;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>우리 회사</h1>
+        <nav>
+            <a href="#home">홈</a>
+            <a href="#services">서비스</a>
+            <a href="#blog">블로그</a>
+            <a href="#contact">연락처</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>홈페이지</h2>
+            <p>우리 회사에 오신 것을 환영합니다! 우리는 최고의 제품과 서비스를 제공하고 있습니다.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>서비스</h2>
+            <p>우리가 제공하는 다양한 서비스에 대해 알아보세요.</p>
+            <ul>
+                <li>서비스 1: 상세 설명</li>
+                <li>서비스 2: 상세 설명</li>
+                <li>서비스 3: 상세 설명</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <h2>블로그</h2>
+            <p>최신 소식과 업데이트를 확인하세요.</p>
+            <article>
+                <h3>블로그 포스트 제목</h3>
+                <p>블로그 포스트 내용...</p>
+            </article>
+            <article>
+                <h3>블로그 포스트 제목</h3>
+                <p>블로그 포스트 내용...</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>연락처</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">이름:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">메시지:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">전송</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 우리 회사. All rights reserved.</p>
+    </footer>
+</body>
+</html>
